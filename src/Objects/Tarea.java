@@ -7,6 +7,8 @@ public class Tarea {
 	private Usuario Asignado;
 	private String Pregunta;
 	private List<String> Respuestas;
+	private String Tipo;
+	private Grupo GrupoUsuarios;
 	
 	public Usuario getAsignado() {
 		return Asignado;
@@ -26,6 +28,17 @@ public class Tarea {
 	public void setRespuestas(List<String> respuestas) {
 		Respuestas = respuestas;
 	}
-
+	public String getTipo() {
+		return Tipo;
+	}
+	public void setTipo(String tipo) {
+		Tipo = tipo;
+	}
+	public Grupo getGrupoUsuarios() {
+		return GrupoUsuarios;
+	}
+	public void setGrupoUsuarios(Grupo grupoUsuarios) {
+		GrupoUsuarios = grupoUsuarios;
+	}	
 	
 }
