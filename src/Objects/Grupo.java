@@ -1,17 +1,17 @@
 package Objects;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Grupo {
 
 	private String Nombre;
-	private List<String> Privilegios;
+	private ArrayList<String> Privilegios;
 
-	public List<String> getPrivilegios() {
+	public ArrayList<String> getPrivilegios() {
 		return Privilegios;
 	}
 
-	public void setPrivilegios(List<String> privilegios) {
+	public void setPrivilegios(ArrayList<String> privilegios) {
 		Privilegios = privilegios;
 	}
 

@@ -1,7 +1,6 @@
 package Objects;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Tramite {
 	
@@ -22,19 +21,18 @@ public class Tramite {
 	public void setDescripcion(String descripcion) {
 		Descripcion = descripcion;
 	}
-	public List<Tarea> getTareas() {
+	public ArrayList<Tarea> getTareas() {
 		return Tareas;
 	}
 	public void setTareas(ArrayList<Tarea> tareas) {
 		Tareas = tareas;
 	}
-	public ArrayList<Tarea> setTarea(Tarea tarea) {
+	public void setTarea(Tarea tarea) {
 		if(Tareas == null )
 			Tareas = new ArrayList<Tarea>();
 		
 		Tareas.add(tarea);
 		
-		return Tareas;		
 	}
 	public Usuario getSolicitante() {
 		return Solicitante;

@@ -1,13 +1,12 @@
 package Objects;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Tarea {
 	
 	private Usuario Asignado;
-	private String Pregunta;
-	private List<String> Respuestas;
-	private String Tipo;
+	private String Descripcion;
+	private ArrayList<Pregunta> Preguntas;
 	private Grupo GrupoUsuarios;
 	
 	public Usuario getAsignado() {
@@ -16,29 +15,28 @@ public class Tarea {
 	public void setAsignado(Usuario asignado) {
 		Asignado = asignado;
 	}
-	public String getPregunta() {
-		return Pregunta;
+	public ArrayList<Pregunta> getPregunta() {
+		return Preguntas;
 	}
-	public void setPregunta(String pregunta) {
-		Pregunta = pregunta;
-	}
-	public List<String> getRespuestas() {
-		return Respuestas;
-	}
-	public void setRespuestas(List<String> respuestas) {
-		Respuestas = respuestas;
-	}
-	public String getTipo() {
-		return Tipo;
-	}
-	public void setTipo(String tipo) {
-		Tipo = tipo;
-	}
+	
+	public void setPregunta(Pregunta pregunta) {
+		if(Preguntas == null )
+			Preguntas = new ArrayList<Pregunta>();
+		
+		Preguntas.add(pregunta);		
+	}		
 	public Grupo getGrupoUsuarios() {
 		return GrupoUsuarios;
 	}
 	public void setGrupoUsuarios(Grupo grupoUsuarios) {
 		GrupoUsuarios = grupoUsuarios;
-	}	
+	}
+	public String getDescripcion() {
+		return Descripcion;
+	}
+	public void setDescripcion(String descripcion) {
+		Descripcion = descripcion;
+	}
+	
 	
 }
